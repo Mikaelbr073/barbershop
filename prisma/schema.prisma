@@ -33,6 +33,7 @@ model Service {
   barbershop   Barbershop @relation(fields: [barbershopid], references: [id])
   description  String
   booking      Booking[]
+  imageUrl String
 }
 
 model Booking {

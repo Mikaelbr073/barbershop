@@ -29,9 +29,9 @@ const BarbershopItem = ( {barbershop }: babershopItenProps) => {
                 className="rounded-2xl"/>
                </div>
                 <div className="px-1">
-                    <h2 className="font-bold mt-2 overflow-hidden text-ellipsis flex-nowrap">{barbershop.name}</h2>
+                    <h2 className="font-bold mt-2 overflow-hidden text-ellipsis text-nowrap">{barbershop.name}</h2>
                     <p className="text-sm text-gray-400 overflow-hidden text-ellipsis text-nowrap">{barbershop.address}</p>
-                    <Button className="w-full mt-3" variant="secondary"  >Reserva</Button>
+                    <Button className="w-full mt-3 mb-2 "variant="secondary">Reserva</Button>
                 </div>
             </CardContent>
         </Card>
