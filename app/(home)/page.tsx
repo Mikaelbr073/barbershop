@@ -6,7 +6,7 @@ import BookingItem from "../_components/booking-item";
 import { db } from "../_lib/prisma"
 import BarbershopItem from "./_component/babershop-item";
 export default  async function Home() {
-const  barbershops = await db.barbershop.findMany({});
+const barbershops = await db.barbershop.findMany({});
   return (
    <div>
       <Header></Header>
