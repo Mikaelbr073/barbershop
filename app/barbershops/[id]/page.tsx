@@ -35,9 +35,11 @@ const BarbershopDetailsPage = async ({params}: BarbershopDetailsPageProps) => {
     return (  
         <div>
             <BarbershopInfo barbershop={barbershop}/>
-            {barbershop.services.map((service)=> (
-                <ServiceItem key={service.id} service={service}/>
-            ))}
+            <div className="flex flex-col gap-3 py-6">
+                {barbershop.services.map((service)=> (
+                    <ServiceItem key={service.id} service={service}/>
+                ))}
+            </div>
         </div>
     );
 }
