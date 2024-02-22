@@ -1,7 +1,9 @@
+'use client'
 import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
+import { signIn, useSession } from "next-auth/react";
 
 const Header = () => {
     return (
